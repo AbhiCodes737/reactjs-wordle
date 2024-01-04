@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Guess5({ isGuessed, guess, word }) {
+export default function Guess7({ isGuessed, guess, word }) {
   let charMap = {};
   let wordMap = {};
   for (let i = 0; i < word.length; i++) {
@@ -24,12 +24,12 @@ export default function Guess5({ isGuessed, guess, word }) {
           : "bg-gray-800";
 
         const borColor = !isGuessed
-          ? "black"
+          ? "border-black"
           : guess[i] === word[i]
-          ? "green-600"
+          ? "border-green-600"
           : word.includes(guess[i]) && wordMap[guess[i]] >= charMap[guess[i]]
-          ? "yellow-400"
-          : "gray-800";
+          ? "border-yellow-400"
+          : "border-gray-800";
 
         const anim = isGuessed ? "animate-[flip_0.5s_ease_forwards]" : "";
 
@@ -37,7 +37,7 @@ export default function Guess5({ isGuessed, guess, word }) {
 
         return (
           <div
-            className={`h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-16 lg:w-16 border transition-colors border-${borColor} font-bold text-3xl ${txtColor} uppercase flex items-center justify-center ${bgColor} ${anim}`}
+            className={`h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 border transition-colors ${borColor} font-bold text-3xl ${txtColor} uppercase flex items-center justify-center ${bgColor} ${anim}`}
             style={{ animationDelay: `${i * 0.2}s` }}
           >
             {guess[i]}
