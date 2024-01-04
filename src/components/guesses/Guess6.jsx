@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Guess5({ isGuessed, guess, word }) {
+export default function Guess6({ isGuessed, guess, word }) {
   let charMap = {};
   let wordMap = {};
   for (let i = 0; i < word.length; i++) {
