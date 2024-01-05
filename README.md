@@ -21,6 +21,10 @@
 
 
 
+https://github.com/AbhiCodes737/reactjs-wordle/assets/102849716/e444ab28-7315-4385-8aed-e366f5c3be48
+
+
+
 **Resources:**
 
 - Wordle by Josh Wardle - https://www.nytimes.com/games/wordle/index.html
